@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<meta charset=UTF-8 />
+<meta name=viewport content="width=device-width, initial-scale=1.0" />
+<title>Responsive Swiper Carousel Example</title>
+<link rel=stylesheet href=https://unpkg.com/swiper/swiper-bundle.min.css />
+<style>body{margin:0}.swiper{width:100%;height:auto;box-shadow:0 4px 4px rgba(0,0,0,0.5);border-radius:25px;overflow:hidden;background-color:white}.swiper-slide{display:flex;justify-content:center;align-items:center;height:100px}.swiper-slide img{max-height:100%;object-fit:contain;width:auto}.swiper-button-prev,.swiper-button-next{color:#0a6e8e;z-index:10;width:40px;height:40px;opacity:.5;display:flex;align-items:center;justify-content:center;top:50%;position:absolute}.swiper-button-prev::after,.swiper-button-next::after{font-size:20px}.swiper-button-prev{left:10px}.swiper-button-next{right:10px}.swiper-pagination-bullet{background:#0a6e8e;z-index:10}@media(max-width:1200px){.swiper-slide{height:80px}}@media(max-width:768px){.swiper-button-prev,.swiper-button-next{width:30px;height:30px}.swiper-button-prev::after,.swiper-button-next::after{font-size:16px}.swiper-slide{height:70px}}@media(max-width:480px){.swiper-button-prev,.swiper-button-next{width:20px;height:20px}.swiper-button-prev::after,.swiper-button-next::after{font-size:12px}.swiper-slide{height:60px}}</style>
+</head>
+<body>
+<div class="swiper mySwiper">
+<div class=swiper-wrapper>
+<div class=swiper-slide>
+<img src=https://static.wixstatic.com/media/15e659_9facd6fb014147ecae2158dc35f50003~mv2.png alt=Bhcoe />
+</div>
+<div class=swiper-slide>
+<img src=https://static.wixstatic.com/media/15e659_a675fe9c8ffa40d286191d437666af53~mv2.png alt=Jade />
+</div>
+<div class=swiper-slide>
+<img src=https://static.wixstatic.com/media/15e659_ae89c7402cdb4c9ba6653a5db32ae79c~mv2.jpeg alt=Autism />
+</div>
+<div class=swiper-slide>
+<img src=https://static.wixstatic.com/media/15e659_62c3d4e47db94bf2900740d8271aa8f6~mv2.png alt=HFMA />
+</div>
+<div class=swiper-slide>
+<img src=https://static.wixstatic.com/media/15e659_2200301687944273885e3518641a8dc4~mv2.png alt=HBMA />
+</div>
+</div>
+<div class=swiper-button-prev></div>
+<div class=swiper-button-next></div>
+</div>
+<script src=https://unpkg.com/swiper/swiper-bundle.min.js></script>
+<script>var swiper=new Swiper(".mySwiper",{loop:true,centeredSlides:true,autoplay:{delay:2500,disableOnInteraction:false},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},breakpoints:{480:{slidesPerView:1,spaceBetween:10},768:{slidesPerView:2,spaceBetween:15},1024:{slidesPerView:3,spaceBetween:20},1200:{slidesPerView:4,spaceBetween:25}}});</script>
+</body>
+</html>
